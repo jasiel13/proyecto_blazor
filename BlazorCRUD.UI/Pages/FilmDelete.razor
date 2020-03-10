@@ -1,0 +1,58 @@
+﻿@page "/filmdelete/{id:int}"
+@using Model
+@using Interfaces
+@inject IFilmService  FilmService
+@inject NavigationManager NavigationManager
+
+<h3>FilmDelete</h3>
+<p style="color:red; text-align:center">Estas seguro que quieres borrar este film?</p>
+
+<EditForm Model="@film">
+
+    <table class="table">
+        <tr>
+            <td>Title:</td>
+            <td><input type="text" @bind="film.title" /></td>
+        </tr>
+        <tr>
+            <td>Director:</td>
+            <td><input type="text" @bind="film.director" /></td>
+        </tr>
+        <tr>
+            <td>Release Date:</td>
+            <td><input type="text" @bind="film.releasedate" /></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align:center">
+                <input type="submit" value="Delete" @onclick="DeleteFilm" />
+                <input type="button" value="Cancel" @onclick="Cancel" />
+            </td>
+        </tr>
+    </table>
+
+</EditForm>
+
+
+@code {
+
+    Film film = new Film();
+
+    [Parameter]
+    public int id { get; set; }
+
+    protected async Task DeleteFilm()
+    {
+        await FilmService.DeleteFilm(id);
+        NavigationManager.NavigateTo("/filmlist");
+    }
+
+    protected override async  Task OnInitializedAsync()
+    {
+        film = await FilmService.GetDetails(id);
+    }
+
+    protected void Cancel()
+    {
+        NavigationManager.NavigateTo("/filmlist");
+    }
+}

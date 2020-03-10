@@ -1,0 +1,79 @@
+﻿<!--esto es para que el navegador lea la pagina-->
+@page "/filmdetails"
+
+<!--esta pagina es la misma que arriba con la diferencia que envia el id para usarlo al momento de borrar un film-->
+@page "/filmdetails/{id:int}"
+
+<!--instanciar la libreria model-->
+@using Model
+
+<!--la forma de usar un using normal en blazor es injectando la dependencia filmservice-->
+@using Interfaces
+@inject IFilmService FilmService
+
+<!--esta clase es para ir directamente a la pagina de lista film una vez que se actualicen datos-->
+@inject NavigationManager NavigationManager
+
+<h1>FilmDetail</h1>
+
+<!--esta es una etiqueta propia de blazor-->
+<EditForm Model="@film">
+
+    <table class="table">
+        <tr>
+            <td>Title:</td>
+            <td><input type="text" @bind="film.title" /></td>
+        </tr>
+        <tr>
+            <td>Director:</td>
+            <td><input type="text" @bind="film.director" /></td>
+        </tr>
+        <tr>
+            <td>Release Date:</td>
+            <td><input type="text" @bind="film.releasedate" /></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align:center">
+                <input type="submit" value="Save" @onclick="SaveFilm"/>
+                <input type="button" value="Cancel" @onclick="CancelFilm"/>
+            </td>
+        </tr>
+    </table>
+
+</EditForm>
+
+@code {
+    //aqui obtenemos el id enviado por la url como parametro
+    [Parameter]
+    public int id { get; set; }
+
+    //creamos una variable llamada film de tipo film con valor de un metodo
+    Film film = new Film();
+
+    protected void CancelFilm()
+    {
+        //devolver a la pagina filmlist cuando se cancele 
+        NavigationManager.NavigateTo("/filmlist");
+    }
+
+    protected async Task SaveFilm()
+    {
+        await FilmService.SaveFilm(film);
+
+        //devolver a la pagina filmlist cuando se actualicen los datos
+        NavigationManager.NavigateTo("/filmlist");
+
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        if(id == 0)
+        {
+            film.releasedate = DateTime.Now;
+        }
+        else
+        {
+            film = await FilmService.GetDetails(id);
+        }
+    }
+}
