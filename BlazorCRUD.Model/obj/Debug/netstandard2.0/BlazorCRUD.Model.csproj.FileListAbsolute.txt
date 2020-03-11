@@ -6,3 +6,11 @@ C:\Users\sistemas\source\repos\BlazorCRUD\BlazorCRUD.Model\obj\Debug\netstandard
 C:\Users\sistemas\source\repos\BlazorCRUD\BlazorCRUD.Model\obj\Debug\netstandard2.0\BlazorCRUD.Model.dll
 C:\Users\sistemas\source\repos\BlazorCRUD\BlazorCRUD.Model\obj\Debug\netstandard2.0\BlazorCRUD.Model.pdb
 C:\Users\sistemas\source\repos\BlazorCRUD\BlazorCRUD.Model\obj\Debug\netstandard2.0\BlazorCRUD.Model.csprojAssemblyReference.cache
+C:\Users\sistemas\Source\Repos\proyecto_blazor\BlazorCRUD.Model\bin\Debug\netstandard2.0\BlazorCRUD.Model.deps.json
+C:\Users\sistemas\Source\Repos\proyecto_blazor\BlazorCRUD.Model\bin\Debug\netstandard2.0\BlazorCRUD.Model.dll
+C:\Users\sistemas\Source\Repos\proyecto_blazor\BlazorCRUD.Model\bin\Debug\netstandard2.0\BlazorCRUD.Model.pdb
+C:\Users\sistemas\Source\Repos\proyecto_blazor\BlazorCRUD.Model\obj\Debug\netstandard2.0\BlazorCRUD.Model.csprojAssemblyReference.cache
+C:\Users\sistemas\Source\Repos\proyecto_blazor\BlazorCRUD.Model\obj\Debug\netstandard2.0\BlazorCRUD.Model.AssemblyInfoInputs.cache
+C:\Users\sistemas\Source\Repos\proyecto_blazor\BlazorCRUD.Model\obj\Debug\netstandard2.0\BlazorCRUD.Model.AssemblyInfo.cs
+C:\Users\sistemas\Source\Repos\proyecto_blazor\BlazorCRUD.Model\obj\Debug\netstandard2.0\BlazorCRUD.Model.dll
+C:\Users\sistemas\Source\Repos\proyecto_blazor\BlazorCRUD.Model\obj\Debug\netstandard2.0\BlazorCRUD.Model.pdb

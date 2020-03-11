@@ -1,4 +1,5 @@
-﻿using BlazorCRUD.Data.Dapper.Repositorios;
+﻿using BlazorCRUD.Data.Dapper;
+using BlazorCRUD.Data.Dapper.Repositorios;
 using BlazorCRUD.Model;
 using BlazorCRUD.UI.Data;
 using BlazorCRUD.UI.Interfaces;

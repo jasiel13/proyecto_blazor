@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sistemas\\source\\repos\\BlazorCRUD\\BlazorCRUD.Data.Dapper\\BlazorCRUD.Data.Dapper.csproj": {}
+    "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.Data.Dapper\\BlazorCRUD.Data.Dapper.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sistemas\\source\\repos\\BlazorCRUD\\BlazorCRUD.Data.Dapper\\BlazorCRUD.Data.Dapper.csproj": {
+    "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.Data.Dapper\\BlazorCRUD.Data.Dapper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sistemas\\source\\repos\\BlazorCRUD\\BlazorCRUD.Data.Dapper\\BlazorCRUD.Data.Dapper.csproj",
+        "projectUniqueName": "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.Data.Dapper\\BlazorCRUD.Data.Dapper.csproj",
         "projectName": "BlazorCRUD.Data.Dapper",
-        "projectPath": "C:\\Users\\sistemas\\source\\repos\\BlazorCRUD\\BlazorCRUD.Data.Dapper\\BlazorCRUD.Data.Dapper.csproj",
+        "projectPath": "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.Data.Dapper\\BlazorCRUD.Data.Dapper.csproj",
         "packagesPath": "C:\\Users\\sistemas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sistemas\\source\\repos\\BlazorCRUD\\BlazorCRUD.Data.Dapper\\obj\\",
+        "outputPath": "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.Data.Dapper\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sistemas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\sistemas\\source\\repos\\BlazorCRUD\\BlazorCRUD.Model\\BlazorCRUD.Model.csproj": {
-                "projectPath": "C:\\Users\\sistemas\\source\\repos\\BlazorCRUD\\BlazorCRUD.Model\\BlazorCRUD.Model.csproj"
+              "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.Model\\BlazorCRUD.Model.csproj": {
+                "projectPath": "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.Model\\BlazorCRUD.Model.csproj"
               }
             }
           }
@@ -71,14 +71,14 @@
         }
       }
     },
-    "C:\\Users\\sistemas\\source\\repos\\BlazorCRUD\\BlazorCRUD.Model\\BlazorCRUD.Model.csproj": {
+    "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.Model\\BlazorCRUD.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sistemas\\source\\repos\\BlazorCRUD\\BlazorCRUD.Model\\BlazorCRUD.Model.csproj",
+        "projectUniqueName": "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.Model\\BlazorCRUD.Model.csproj",
         "projectName": "BlazorCRUD.Model",
-        "projectPath": "C:\\Users\\sistemas\\source\\repos\\BlazorCRUD\\BlazorCRUD.Model\\BlazorCRUD.Model.csproj",
+        "projectPath": "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.Model\\BlazorCRUD.Model.csproj",
         "packagesPath": "C:\\Users\\sistemas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sistemas\\source\\repos\\BlazorCRUD\\BlazorCRUD.Model\\obj\\",
+        "outputPath": "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sistemas\\AppData\\Roaming\\NuGet\\NuGet.Config",
