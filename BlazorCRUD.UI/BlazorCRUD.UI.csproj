@@ -5,8 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.10.2" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\BlazorCRUD.Data.Dapper\BlazorCRUD.Data.Dapper.csproj" />
     <ProjectReference Include="..\BlazorCRUD.Model\BlazorCRUD.Model.csproj" />
   </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="http://json.schemastore.org/commands" /></VisualStudio></ProjectExtensions>
 
 </Project>

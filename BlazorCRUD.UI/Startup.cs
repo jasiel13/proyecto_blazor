@@ -12,6 +12,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using BlazorCRUD.Model;
+using Microsoft.Extensions.Options;
+using BlazorCRUD.Data.Dapper.Repositorios;
 
 namespace BlazorCRUD.UI
 {
@@ -36,6 +39,16 @@ namespace BlazorCRUD.UI
             //agregamos la conexion a la bd
             var SqlConnectionConfiguration = new SqlConfiguration(Configuration.GetConnectionString("SqlConnection"));
             services.AddSingleton(SqlConnectionConfiguration);
+
+            //agregar la conexion a la bd mongo
+            services.Configure<ArchivosDBMDatabaseSettings>(
+            Configuration.GetSection(nameof(ArchivosDBMDatabaseSettings)));
+
+            services.AddSingleton<IArchivosDBMDatabaseSettings>(sp =>
+            sp.GetRequiredService<IOptions<ArchivosDBMDatabaseSettings>>().Value);
+
+            //agregamos el empleadoservice
+            services.AddSingleton<EmpleadoService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
