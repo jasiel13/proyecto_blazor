@@ -8,6 +8,7 @@ namespace BlazorCRUD.Model
     public class ArchivosDBMDatabaseSettings : IArchivosDBMDatabaseSettings
     {
         public string EmpleadosPCollectionName { get; set; }
+        public string FilesCollectionName { get; set; }
         public string ConnectionString { get; set; }
         public string DatabaseName { get; set; }        
     }
@@ -15,6 +16,7 @@ namespace BlazorCRUD.Model
     public interface IArchivosDBMDatabaseSettings
     {
         string EmpleadosPCollectionName { get; set; }
+        string FilesCollectionName { get; set; }
         string ConnectionString { get; set; }
         string DatabaseName { get; set; }
     }

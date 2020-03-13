@@ -24,12 +24,11 @@ namespace BlazorCRUD.Data.Dapper.Repositorios
             throw new NotImplementedException();
         }
      
-        public async Task<IEnumerable<Empleados>> GetAllEmpleados()
+        public Task<IEnumerable<Empleados>> GetAllEmpleados()
         {
-            //throw new NotImplementedException(); 
-            IEnumerable<Empleados> empleado = await GetAllEmpleados();
-            _empleadoService.GetAllEmpleados();
-            return empleado;
+            throw new NotImplementedException(); 
+            //IEnumerable<Empleados> empleado = await GetAllEmpleados();
+            //_empleadoService.GetAllEmpleados();     
 
         }
 

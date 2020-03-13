@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.UI\\BlazorCRUD.UI.csproj": {}
+    "C:\\Users\\Caldo\\Source\\Repos\\jasiel13\\proyecto_blazor\\BlazorCRUD.UI\\BlazorCRUD.UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.Data.Dapper\\BlazorCRUD.Data.Dapper.csproj": {
+    "C:\\Users\\Caldo\\Source\\Repos\\jasiel13\\proyecto_blazor\\BlazorCRUD.Data.Dapper\\BlazorCRUD.Data.Dapper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.Data.Dapper\\BlazorCRUD.Data.Dapper.csproj",
+        "projectUniqueName": "C:\\Users\\Caldo\\Source\\Repos\\jasiel13\\proyecto_blazor\\BlazorCRUD.Data.Dapper\\BlazorCRUD.Data.Dapper.csproj",
         "projectName": "BlazorCRUD.Data.Dapper",
-        "projectPath": "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.Data.Dapper\\BlazorCRUD.Data.Dapper.csproj",
-        "packagesPath": "C:\\Users\\sistemas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.Data.Dapper\\obj\\",
+        "projectPath": "C:\\Users\\Caldo\\Source\\Repos\\jasiel13\\proyecto_blazor\\BlazorCRUD.Data.Dapper\\BlazorCRUD.Data.Dapper.csproj",
+        "packagesPath": "C:\\Users\\Caldo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Caldo\\Source\\Repos\\jasiel13\\proyecto_blazor\\BlazorCRUD.Data.Dapper\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\sistemas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Caldo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,8 +30,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.Model\\BlazorCRUD.Model.csproj": {
-                "projectPath": "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.Model\\BlazorCRUD.Model.csproj"
+              "C:\\Users\\Caldo\\Source\\Repos\\jasiel13\\proyecto_blazor\\BlazorCRUD.Model\\BlazorCRUD.Model.csproj": {
+                "projectPath": "C:\\Users\\Caldo\\Source\\Repos\\jasiel13\\proyecto_blazor\\BlazorCRUD.Model\\BlazorCRUD.Model.csproj"
               }
             }
           }
@@ -56,6 +59,10 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "ServiceStack.Core": {
+              "target": "Package",
+              "version": "[5.8.0, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.1, )"
@@ -75,17 +82,20 @@
         }
       }
     },
-    "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.Model\\BlazorCRUD.Model.csproj": {
+    "C:\\Users\\Caldo\\Source\\Repos\\jasiel13\\proyecto_blazor\\BlazorCRUD.Model\\BlazorCRUD.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.Model\\BlazorCRUD.Model.csproj",
+        "projectUniqueName": "C:\\Users\\Caldo\\Source\\Repos\\jasiel13\\proyecto_blazor\\BlazorCRUD.Model\\BlazorCRUD.Model.csproj",
         "projectName": "BlazorCRUD.Model",
-        "projectPath": "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.Model\\BlazorCRUD.Model.csproj",
-        "packagesPath": "C:\\Users\\sistemas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.Model\\obj\\",
+        "projectPath": "C:\\Users\\Caldo\\Source\\Repos\\jasiel13\\proyecto_blazor\\BlazorCRUD.Model\\BlazorCRUD.Model.csproj",
+        "packagesPath": "C:\\Users\\Caldo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Caldo\\Source\\Repos\\jasiel13\\proyecto_blazor\\BlazorCRUD.Model\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\sistemas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Caldo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -134,17 +144,20 @@
         }
       }
     },
-    "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.UI\\BlazorCRUD.UI.csproj": {
+    "C:\\Users\\Caldo\\Source\\Repos\\jasiel13\\proyecto_blazor\\BlazorCRUD.UI\\BlazorCRUD.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.UI\\BlazorCRUD.UI.csproj",
+        "projectUniqueName": "C:\\Users\\Caldo\\Source\\Repos\\jasiel13\\proyecto_blazor\\BlazorCRUD.UI\\BlazorCRUD.UI.csproj",
         "projectName": "BlazorCRUD.UI",
-        "projectPath": "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.UI\\BlazorCRUD.UI.csproj",
-        "packagesPath": "C:\\Users\\sistemas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.UI\\obj\\",
+        "projectPath": "C:\\Users\\Caldo\\Source\\Repos\\jasiel13\\proyecto_blazor\\BlazorCRUD.UI\\BlazorCRUD.UI.csproj",
+        "packagesPath": "C:\\Users\\Caldo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Caldo\\Source\\Repos\\jasiel13\\proyecto_blazor\\BlazorCRUD.UI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\sistemas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Caldo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -157,11 +170,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.Data.Dapper\\BlazorCRUD.Data.Dapper.csproj": {
-                "projectPath": "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.Data.Dapper\\BlazorCRUD.Data.Dapper.csproj"
+              "C:\\Users\\Caldo\\Source\\Repos\\jasiel13\\proyecto_blazor\\BlazorCRUD.Data.Dapper\\BlazorCRUD.Data.Dapper.csproj": {
+                "projectPath": "C:\\Users\\Caldo\\Source\\Repos\\jasiel13\\proyecto_blazor\\BlazorCRUD.Data.Dapper\\BlazorCRUD.Data.Dapper.csproj"
               },
-              "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.Model\\BlazorCRUD.Model.csproj": {
-                "projectPath": "C:\\Users\\sistemas\\Source\\Repos\\proyecto_blazor\\BlazorCRUD.Model\\BlazorCRUD.Model.csproj"
+              "C:\\Users\\Caldo\\Source\\Repos\\jasiel13\\proyecto_blazor\\BlazorCRUD.Model\\BlazorCRUD.Model.csproj": {
+                "projectPath": "C:\\Users\\Caldo\\Source\\Repos\\jasiel13\\proyecto_blazor\\BlazorCRUD.Model\\BlazorCRUD.Model.csproj"
               }
             }
           }
@@ -178,6 +191,10 @@
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.10.2, )"
+            },
+            "ServiceStack.Core": {
+              "target": "Package",
+              "version": "[5.8.0, )"
             }
           },
           "imports": [
