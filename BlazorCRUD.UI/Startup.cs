@@ -48,7 +48,7 @@ namespace BlazorCRUD.UI
             sp.GetRequiredService<IOptions<ArchivosDBMDatabaseSettings>>().Value);
 
             //agregamos el empleadoservice
-            services.AddSingleton<EmpleadoService>();
+            services.AddSingleton< BlazorCRUD.Data.Dapper.Repositorios.EmpleadoService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
