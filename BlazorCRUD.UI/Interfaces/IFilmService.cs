@@ -14,13 +14,4 @@ namespace BlazorCRUD.UI.Interfaces
         Task<bool> DeleteFilm(int id);
         Task<bool> SaveFilm(Film film);
     }
-
-    public interface IFileService
-    {
-        Task<IEnumerable<File>> GetAllFiles();
-        Task<File> GetDetails(string id);
-        Task<bool> DeleteFile(string id);
-        Task<bool> SaveFile(File film);
-    }
-
 }

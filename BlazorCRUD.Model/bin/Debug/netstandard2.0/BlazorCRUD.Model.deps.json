@@ -739,7 +739,7 @@
         "runtime": {
           "lib/netstandard1.3/System.Runtime.Serialization.Primitives.dll": {
             "assemblyVersion": "4.1.2.0",
-            "fileVersion": "4.6.24702.1"
+            "fileVersion": "4.6.24705.1"
           }
         }
       },

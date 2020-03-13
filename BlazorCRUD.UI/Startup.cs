@@ -34,8 +34,7 @@ namespace BlazorCRUD.UI
             services.AddRazorPages();
             services.AddServerSideBlazor();
             //agregamos un nuevo servicio para asociar la interfaz del servicio con el objeto del servicio
-            services.AddScoped<IFilmService, FilmService>();
-            services.AddScoped<IFileService, FileService>();
+            services.AddScoped<IFilmService, FilmService>();            
 
             //agregamos la conexion a la bd
             var SqlConnectionConfiguration = new SqlConfiguration(Configuration.GetConnectionString("SqlConnection"));
@@ -50,6 +49,7 @@ namespace BlazorCRUD.UI
 
             //agregamos el empleadoservice
             services.AddSingleton<EmpleadoService>();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

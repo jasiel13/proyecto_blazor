@@ -7,7 +7,7 @@
 <p>Esta pagina muestra la lista de todos los films</p>
 
 <!--si la variable films esta vacia imprimir mensaje-->
-@if(films == null) 
+@if (films == null)
 {
     <p><em>Loading...</em></p>
 }
@@ -24,15 +24,15 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach(var film in films)
+            @foreach (var film in films)
             {
-            <tr>
-                <td>@film.title</td>
-                <td>@film.director</td>
-                <td>@film.releasedate</td>  
-                <td><a href="/filmdetails/@film.id"><i>Edit</i></a></td>
-                <td><a href="/filmdelete/@film.id"><i>Delete</i></a></td>
-            </tr>
+                <tr>
+                    <td>@film.title</td>
+                    <td>@film.director</td>
+                    <td>@film.releasedate</td>
+                    <td><a href="/filmdetails/@film.id"><i>Edit</i></a></td>
+                    <td><a href="/filmdelete/@film.id"><i>Delete</i></a></td>
+                </tr>
             }
         </tbody>
     </table>
@@ -49,7 +49,7 @@ else
         {
             films = await FilmService.GetAllFilms();
         }
-        catch(Exception)
+        catch (Exception)
         {
             throw;
         }

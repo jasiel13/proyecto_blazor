@@ -6,8 +6,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using BlazorCRUD.Data;
 using BlazorCRUD.Model;
+using Microsoft.AspNetCore.Mvc;
 
-namespace BlazorCRUD.Data.Dapper.Repositorios
+namespace BlazorCRUD.UI.Services
 {
     public class EmpleadoService
     {
@@ -33,14 +34,16 @@ namespace BlazorCRUD.Data.Dapper.Repositorios
             _empleados.InsertOne(empleado);
             return empleado;
         }
-        public void UpdateEmpleado(Empleados empleado)
+        /*public void UpdateEmpleado(Empleados empleado)
         {
             _empleados.ReplaceOne(filter: e => e.Id == empleado.Id, replacement: empleado);
-        }
+        }*/
 
-        /*public void UpdateEmpleado(string id, Empleados empleadosx) =>
-        _empleados.ReplaceOne(empleado => empleado.Id == id, empleadosx);*/
+        public void UpdateEmpleado(string id, Empleados empleadosx) =>
+        _empleados.ReplaceOne(empleado => empleado.Id == id, empleadosx);
+
         public void DeleteEmpleado(string id) =>
         _empleados.DeleteOne(empleado => empleado.Id == id);
+
     }
 }
