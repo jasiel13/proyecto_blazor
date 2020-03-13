@@ -33,12 +33,16 @@ namespace BlazorCRUD.UI
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
-            //agregamos un nuevo servicio para asociar la interfaz del servicio con el objeto del servicio
-            services.AddScoped<IFilmService, FilmService>();            
+            //agregamos un nuevo servicio para asociar la interfaz del servicio con el objeto del servicio film
+            services.AddScoped<IFilmService, FilmService>(); 
+
+            //agregamos la interfaz y el servicio de file
+            services.AddScoped<IFileService, FileService>();
 
             //agregamos la conexion a la bd
             var SqlConnectionConfiguration = new SqlConfiguration(Configuration.GetConnectionString("SqlConnection"));
             services.AddSingleton(SqlConnectionConfiguration);
+
 
             //agregar la conexion a la bd mongo
             services.Configure<ArchivosDBMDatabaseSettings>(
@@ -49,7 +53,6 @@ namespace BlazorCRUD.UI
 
             //agregamos el empleadoservice
             services.AddSingleton<EmpleadoService>();
-            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,0 +1,58 @@
+﻿@page "/filelist"
+@using Model
+@using Interfaces
+@inject IFileService  FileService
+
+<h3>FileList</h3>
+<p>Esta pagina muestra la lista de todos los archivos</p>
+
+<!--si la variable files esta vacia imprimir mensaje-->
+@if (files == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Size</th>
+                <th>Type</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var file in files)
+            {
+                <tr>
+                    <td>@file.Name</td>
+                    <td>@file.Size</td>
+                    <td>@file.Type</td>
+                    <td><a href="/filedetails/@file.Id"><i>Edit</i></a></td>
+                    <td><a href="/filedelete/@file.Id."><i>Delete</i></a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code {
+    //metodo del ciclo de vida de la pagina
+    private IEnumerable<File> files;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            files = await FileService.GetAllFiles();
+        }
+        catch (Exception)
+        {
+            throw;
+        }
+    }
+
+}

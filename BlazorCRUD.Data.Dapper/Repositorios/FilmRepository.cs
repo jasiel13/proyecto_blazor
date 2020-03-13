@@ -1,6 +1,4 @@
-﻿
-
-using BlazorCRUD.Model;
+﻿using BlazorCRUD.Model;
 using Dapper;
 using System;
 using System.Collections.Generic;
@@ -37,7 +35,7 @@ namespace BlazorCRUD.Data.Dapper.Repositorios
 
             var result = await db.ExecuteAsync(sql.ToString(), new { id = id });
 
-            return result > 0 ;
+            return result > 0;
         }
 
         public async Task<IEnumerable<Film>> GetAllFilms()
@@ -67,7 +65,7 @@ namespace BlazorCRUD.Data.Dapper.Repositorios
             var sql = @"INSERT INTO films (title,director,releasedate)VALUES(@title,@director,@releasedate)";
 
             //devolver el resultato de manera asincrona
-            var result = await db.ExecuteAsync(sql.ToString(),new { film.title,film.director,film.releasedate});
+            var result = await db.ExecuteAsync(sql.ToString(), new { film.title, film.director, film.releasedate });
 
             //el valor que devolvera sera bool si resultado es mayor a cero es true
             return result > 0;
@@ -79,7 +77,7 @@ namespace BlazorCRUD.Data.Dapper.Repositorios
 
             var sql = @"UPDATE films SET title=@title, director=@director, releasedate=@releasedate WHERE id = @id";
 
-            var result = await db.ExecuteAsync(sql.ToString(), new { film.title, film.director, film.releasedate, film.id});
+            var result = await db.ExecuteAsync(sql.ToString(), new { film.title, film.director, film.releasedate, film.id });
 
             return result > 0;
         }

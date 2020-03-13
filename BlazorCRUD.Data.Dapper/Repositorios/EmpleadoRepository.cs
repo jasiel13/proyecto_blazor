@@ -9,17 +9,27 @@ using System.Threading.Tasks;
 namespace BlazorCRUD.Data.Dapper.Repositorios
 {
     public class EmpleadoRepository : IEmpleadosRepository
-    {                    
+    {
+        //codigo para usar el empleadoservice
+        private readonly EmpleadoService _empleadoService;
+
+        public EmpleadoRepository(EmpleadoService empleadoService)
+        {
+            _empleadoService = empleadoService;
+        }
+
+
         public Task<bool> DeleteEmpleado(string id)
         {
             throw new NotImplementedException();
         }
-     
-        public async Task<IEnumerable<Empleados>> GetAllEmpleados()
+
+        public Task<IEnumerable<Empleados>> GetAllEmpleados()
         {
-            //throw new NotImplementedException(); 
-            IEnumerable<Empleados> empleado = await GetAllEmpleados();          
-            return empleado;
+            throw new NotImplementedException();
+            //IEnumerable<Empleados> empleado = await GetAllEmpleados();
+            //_empleadoService.GetAllEmpleados();     
+
         }
 
         public Task<Empleados> GetEmpleadosDetails(string id)

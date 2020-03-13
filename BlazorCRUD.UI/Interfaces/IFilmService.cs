@@ -10,8 +10,17 @@ namespace BlazorCRUD.UI.Interfaces
     public interface IFilmService
     {
         Task<IEnumerable<Film>> GetAllFilms();
-        Task<Film>GetDetails(int id);
+        Task<Film> GetDetails(int id);
         Task<bool> DeleteFilm(int id);
         Task<bool> SaveFilm(Film film);
     }
+
+    public interface IFileService
+    {
+        Task<IEnumerable<File>> GetAllFiles();
+        Task<File> GetDetails(string id);
+        Task<bool> DeleteFile(string id);
+        Task<bool> SaveFile(File film);
+    }
+
 }
