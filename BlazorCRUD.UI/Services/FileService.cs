@@ -15,14 +15,14 @@ namespace BlazorCRUD.UI.Services
     public class FileService : IFileService
     {
         //private readonly IFileService fileService;
-        protected IMongoCollection<File> DbSet;
+        protected IMongoCollection<DbFile> DbSet;
         //protected readonly IMongoContext Context;
 
         public FileService(IArchivosDBMDatabaseSettings settings)
         {
             var client = new MongoClient(settings.ConnectionString);
             var database = client.GetDatabase(settings.DatabaseName);
-            DbSet = database.GetCollection<File>(settings.FilesCollectionName);
+            DbSet = database.GetCollection<DbFile>(settings.FilesCollectionName);
         }
         private void ConfigDbSet()
         {
@@ -35,20 +35,20 @@ namespace BlazorCRUD.UI.Services
             throw new NotImplementedException();
         }
 
-        public async Task<IEnumerable<File>> GetAllFiles()
+        public async Task<IEnumerable<DbFile>> GetAllFiles()
         {
             //var all = fileService.GetAllFiles();
-            var all = await DbSet.FindAsync(Builders<File>.Filter.Empty);
+            var all = await DbSet.FindAsync(Builders<DbFile>.Filter.Empty);
             return all.ToList();
             //throw new NotImplementedException();
         }
 
-        public Task<File> GetDetails(string id)
+        public Task<DbFile> GetDetails(string id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<bool> SaveFile(File file)
+        public Task<bool> SaveFile(DbFile file)
         {
             throw new NotImplementedException();
         }

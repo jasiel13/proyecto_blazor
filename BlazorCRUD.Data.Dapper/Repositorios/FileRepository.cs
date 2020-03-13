@@ -16,7 +16,7 @@ namespace BlazorCRUD.Data.Dapper.Repositorios
         Task<int> SaveChanges();
         IMongoCollection<T> GetCollection<T>(string name);
     }
-    public class FileRepository : BaseRepository<File>, IFileRepository
+    public class FileRepository : BaseRepository<DbFile>, IFileRepository
     {
         public FileRepository(IMongoContext context) : base(context)
         {

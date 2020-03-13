@@ -39,6 +39,9 @@ namespace BlazorCRUD.UI
             //agregamos la interfaz y el servicio de file
             services.AddScoped<IFileService, FileService>();
 
+            //agregamos la interfaz y el servicio de fileupload
+            services.AddScoped<IFileUpload, FileUpload>();
+
             //agregamos la conexion a la bd
             var SqlConnectionConfiguration = new SqlConfiguration(Configuration.GetConnectionString("SqlConnection"));
             services.AddSingleton(SqlConnectionConfiguration);

@@ -175,6 +175,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "BlazorInputFile": {
+              "target": "Package",
+              "version": "[0.1.0-preview-00002, )"
+            },
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.10.2, )"

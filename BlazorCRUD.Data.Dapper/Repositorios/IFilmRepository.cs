@@ -30,7 +30,7 @@ namespace BlazorCRUD.Data.Dapper.Repositorios
     //    Task<bool> DeleteFile(string id);
     //}
 
-    public interface IFileRepository : IRepository<File>
+    public interface IFileRepository : IRepository<DbFile>
     {
     }
 

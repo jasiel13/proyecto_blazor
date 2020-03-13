@@ -15,7 +15,7 @@ namespace BlazorCRUD.Model
         public DateTime releasedate { get; set; }
     }
 
-    public class File
+    public class DbFile
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]

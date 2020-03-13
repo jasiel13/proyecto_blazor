@@ -17,10 +17,10 @@ namespace BlazorCRUD.UI.Interfaces
 
     public interface IFileService
     {
-        Task<IEnumerable<File>> GetAllFiles();
-        Task<File> GetDetails(string id);
+        Task<IEnumerable<DbFile>> GetAllFiles();
+        Task<DbFile> GetDetails(string id);
         Task<bool> DeleteFile(string id);
-        Task<bool> SaveFile(File film);
+        Task<bool> SaveFile(DbFile film);
     }
 
 }
