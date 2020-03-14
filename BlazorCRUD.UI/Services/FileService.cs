@@ -11,12 +11,18 @@ using MongoDB.Driver;
 
 namespace BlazorCRUD.UI.Services
 {
+    public interface IMongoContext : IDisposable
+    {
+        void AddCommand(Func<Task> func);
+        Task<int> SaveChanges();
+        IMongoCollection<T> GetCollection<T>(string name);
+    }
 
     public class FileService : IFileService
     {
         //private readonly IFileService fileService;
         protected IMongoCollection<DbFile> DbSet;
-        //protected readonly IMongoContext Context;
+        protected readonly IMongoContext Context;
 
         public FileService(IArchivosDBMDatabaseSettings settings)
         {
@@ -26,8 +32,8 @@ namespace BlazorCRUD.UI.Services
         }
         private void ConfigDbSet()
         {
-            //DbSet = Context.GetCollection<File>(typeof(File).Name);
-            //Context.
+            DbSet = Context.GetCollection<DbFile>(typeof(DbFile).Name);
+            //Context = Context.GetCollection<DbFile>(typeof(DbFile).Name);
         }
 
         public Task<bool> DeleteFile(string id)
@@ -50,7 +56,10 @@ namespace BlazorCRUD.UI.Services
 
         public Task<bool> SaveFile(DbFile file)
         {
-            throw new NotImplementedException();
+            var insert = DbSet.InsertOneAsync(file);
+            return null;
+            //AddCommand(() => DbSet.InsertOneAsync(obj));
+
         }
     }
 
